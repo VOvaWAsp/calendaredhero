@@ -1,0 +1,69 @@
+.container {
+  padding: 0 75px;
+  padding-top: 70px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(52, 61, 73, 0.38) 0%,
+    rgba(1, 1, 1, 0.38) 100%
+  );
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+}
+
+.gridItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 440px;
+  height: 440px;
+  background: var(--dark-blue);
+  background-size: cover;
+  margin: auto;
+}
+
+.gridImage1 {
+  width: 100%;
+  background-image: url(../../images/OurWorks/car1.png);
+  background-size: cover;
+}
+
+.gridImage2 {
+  width: 100%;
+  background-image: url(../../images/OurWorks/car2.png);
+  background-size: cover;
+}
+
+.gridImage3 {
+  width: 100%;
+  background-image: url(../../images/OurWorks/car3.png);
+  background-size: cover;
+}
+
+.title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 96px;
+  color: var(--white);
+}
+
+.btn {
+  border: 3px solid white;
+  border-radius: 3px;
+  padding: 16px 32px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+}
+
+.btn:hover,
+.btn:focus {
+  background: white;
+  color: black;
+}
