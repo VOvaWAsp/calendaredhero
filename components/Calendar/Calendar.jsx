@@ -13,7 +13,7 @@ export default function Calendar() {
   const onSubmit = async(data) => {
     try {
       const formattedDate = `${calendarDateTime.year}-${String(calendarDateTime.month).padStart(2, "0")}-${String(calendarDateTime.day).padStart(2, "0")}, ${String(calendarDateTime.hour).padStart(2, "0")}:${String(calendarDateTime.minute).padStart(2, "0")}`;
-      const response = await axios.post("http://localhost:3000/api/telegrambooking", {
+      const response = await axios.post("https://apdetailapi.onrender.com/api/telegrambooking", {
         fullName: data.fullname,
         email: data.email,
         phone: data.phone,

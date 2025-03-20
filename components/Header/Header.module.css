@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px 75px;
+    width: 100%;
+    backdrop-filter: blur(50px);
+    background: rgba(196, 196, 196, 0.01);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    transition:  0.8s;
+    z-index: 999;
+  }
+
+  .logo {
+    background-color: transparent;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    gap: 80px;
+  }
+
+  .link {
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 24px;
+color: var(--white);
+background-color: transparent;
+  }
