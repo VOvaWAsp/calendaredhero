@@ -19,7 +19,7 @@
 .blockLocation {
   position: absolute;
   top: 400px;
-  width: 1124px;
+  min-width: 80%;
   border: 3px solid white;
   border-radius: 3px;
   background: black;

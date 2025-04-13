@@ -16,18 +16,17 @@
 }
 
 .gridItem {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 440px;
-  height: 440px;
-  background: var(--dark-blue);
-  background-size: cover;
-  margin: auto;
-}
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1 / 1;
+    background: var(--dark-blue);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+  
 .gridImage1 {
-  width: 100%;
   background-image: url(../../images/OurWorks/car1.png);
   background-size: cover;
 }
@@ -47,7 +46,7 @@
 .title {
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: 96px;
+  font-size: 46px;
   color: var(--white);
 }
 
