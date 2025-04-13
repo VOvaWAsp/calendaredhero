@@ -1,22 +1,47 @@
+import { NavLink, useNavigate } from "react-router-dom";
 import css from "./Header.module.css";
 
 export default function Header() {
+  const navigate = useNavigate();
+
+  const handleNavigate = (id) => {
+    navigate("/");
+    setTimeout(() => {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+  };
   return (
     <div className={css.container}>
       <h2 className={css.logo}>Logo</h2>
       <nav className={css.nav}>
-        <a className={css.link} href="">
+        <button
+          className={css.link}
+          href=""
+          onClick={() => handleNavigate("home")}
+        >
           Home
-        </a>
-        <a className={css.link} href="">
+        </button>
+        <button
+          className={css.link}
+          href=""
+          onClick={() => handleNavigate("about")}
+        >
           About us
-        </a>
-        <a className={css.link} href="">
+        </button>
+        <button
+          className={css.link}
+          href=""
+          onClick={() => handleNavigate("services")}
+        >
           Services
-        </a>
-        <a className={css.link} href="">
+        </button>
+        <button
+          className={css.link}
+          href=""
+          onClick={() => handleNavigate("contact")}
+        >
           Contact
-        </a>
+        </button>
       </nav>
     </div>
   );

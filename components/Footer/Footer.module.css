@@ -1,9 +1,9 @@
 .container {
   padding: 0 75px;
   margin-top: 140px;
-  margin-bottom: 340px;
   width: 100%;
   height: 100%;
+  background-color: black;
 }
 
 .blockInfo {

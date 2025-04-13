@@ -72,8 +72,6 @@ export default function MainReviewsPage() {
           );
         })}
       </Swiper>
-
-      {/* Кастомні стрілки */}
       <div ref={swiperButtonPrev} className={css.swiperButtonPrev}>
         <svg>
           <use href={`${sprite}#icon-arrowleft`}></use>

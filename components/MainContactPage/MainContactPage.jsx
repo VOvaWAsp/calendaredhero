@@ -2,7 +2,7 @@ import css from "./MainContactPage.module.css";
 
 export default function MainContactPage() {
   return (
-    <div className={css.container}>
+    <div id="contact" className={css.container}>
       <h2 className={css.title}>Contact us</h2>
       <div className={css.blockContact}>
         <h2 className={css.subtitle}>contact</h2>

@@ -2,7 +2,7 @@ import css from "./MainWorksPage.module.css";
 
 export default function MainWorksPage() {
   return (
-    <div className={css.container}>
+    <div id="about" className={css.container}>
       <div className={css.gridContainer}>
         <div className={css.gridItem}>
           <h2 className={css.title}>OUR</h2>

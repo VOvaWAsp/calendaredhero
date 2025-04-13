@@ -1,0 +1,73 @@
+.container {
+  padding: 0 75px;
+  background-color: url(../../images/Booking/detail.png);
+}
+
+.FormBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-top: 300px;
+  border: 3px solid white;
+  border-radius: 3px;
+  padding: 40px 30px;
+}
+
+.labels {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.hr {
+  border: 3px solid gray;
+  border-radius: 20px;
+  width: 0px;
+  height: 100px;
+  padding: 0;
+}
+
+.blockInput {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.subtitle {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+}
+
+.input::placeholder {
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 20px;
+color: gray;
+}
+
+.BlockBtn {
+    display: flex;
+    background-color: transparent;
+}
+
+.btn {
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 20px;
+color: white;
+    border: 3px solid white;
+border-radius: 3px;
+padding: 16px 32px;
+margin: 40px auto;
+}
+
+.btn:hover,
+.btn:focus {
+    color: black;
+    background: white;
+}

@@ -10,16 +10,16 @@ import MainWorksPage from "../../components/MainWorksPage/MainWorksPage";
 
 export default function HomePages() {
     return (
-        <>
+        <div>
         <MainHeroPage />
         <MainAdvantagesPage />
         <MainServicesPage />
         <MainWorksPage />
         <MainLocationPage />
         <MainContactPage />
+        <MainReviewsPage />
         <Footer />
-        {/* <MainReviewsPage /> */}
         {/* <Calendar /> */}
-        </>
+        </div>
     )
 }
