@@ -1,5 +1,5 @@
 .container {
-    position: relative;
+  position: relative;
   padding: 0 75px;
   padding-top: 280px;
   width: 100%;
@@ -62,8 +62,21 @@
   gap: 10px;
 }
 
+.cardInfoLast {
+    display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .text {
   font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+}
+
+.textLast {
+    font-family: var(--font-family);
   font-weight: 500;
   font-size: 20px;
   color: white;
@@ -77,3 +90,50 @@
   color: white;
   text-decoration: none;
 }
+
+@media (max-width: 1219px) {
+  .container {
+    padding-top: 460px;
+  }
+  .blockContact {
+    margin-top: 56px;
+  }
+  .blockInfo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 48px;
+    grid-template-rows: auto auto;
+    justify-items: center; 
+  }
+  .cardInfoLast {
+    grid-column: 1 / -1; 
+    justify-self: center; 
+    margin-top: 24px; 
+  }
+  .textLast {
+    text-align: center;
+  }
+}
+
+@media (max-width: 769px) {
+    .title {
+      font-weight: 500;
+      font-size: 20px;
+    }
+    
+    .blockInfo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 48px;
+        grid-template-rows: auto auto;
+        justify-items: center; 
+      }
+      .textLast {
+        text-align: left;
+      }
+      .blockInfo {
+        justify-items: start;
+        justify-content: space-between;
+      }
+  }
+  

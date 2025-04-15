@@ -8,16 +8,7 @@ import Footer from "../Footer/Footer";
 
 export default function App() {
   return (
-    <div style={{
-      maxWidth: "1440px",
-      width: "100%",
-      marginLeft: "auto",
-      marginRight: "auto",
-      minHeight: "100vh",
-      paddingLeft: "1rem",
-      paddingRight: "1rem"
-    }}>
-      {/* <Header /> */}
+    <div className={css.container}>
       <Header/>
       <Suspense fallback={<div>Loading...</div>}>
       <Routes>

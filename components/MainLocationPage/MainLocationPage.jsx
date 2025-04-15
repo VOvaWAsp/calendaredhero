@@ -41,6 +41,32 @@ export default function MainLocationPage() {
           <li className={css.text}>Des Plaines</li>
         </ul>
       </div>
+      <div className={css.sectionLocationMedium}>
+        <ul className={css.listMedium}>
+          <li className={css.text}>Downtown </li>
+          <li className={css.text}>Northbrook</li>
+          <li className={css.text}>Evanston</li>
+          <li className={css.text}>Wilmette</li>
+          <li className={css.text}>Winnetka</li>
+          <li className={css.text}>Highland Park </li>
+          <li className={css.text}>Rogers Park</li>
+          <li className={css.text}>Vernon Hills</li>
+          <li className={css.text}>Lake Zurich</li>
+          <li className={css.text}>Oak Brook</li>
+        </ul>
+        <ul className={css.listMedium}>
+          <li className={css.text}>Wheeling </li>
+          <li className={css.text}>Schaumburg</li>
+          <li className={css.text}>Aurora</li>
+          <li className={css.text}>Naperville</li>
+          <li className={css.text}>Niles</li>
+          <li className={css.text}>Arlington Heights </li>
+          <li className={css.text}>Park Ridge</li>
+          <li className={css.text}>Skokie</li>
+          <li className={css.text}>Glenview</li>
+          <li className={css.text}>Des Plaines</li>
+        </ul>
+      </div>
     </div>
   </div>
 </div></>

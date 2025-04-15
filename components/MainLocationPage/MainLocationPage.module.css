@@ -6,6 +6,10 @@
 
 }
 
+.sectionLocationMedium {
+    display: none;
+}
+
 .title {
   font-family: var(--font-family);
   font-weight: 500;
@@ -80,5 +84,31 @@
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 20px;
-  color: var(--white);
+  color: white;
 }
+
+@media (max-width: 1219px) {
+    .sectionLocation {
+      display: none;
+    }
+    .sectionLocationMedium {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 32px;
+    }
+    .listMedium {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        list-style-type: disc;
+      }
+  }
+  
+  @media (max-width: 769px) {
+    .title {
+      font-weight: 500;
+      font-size: 20px;
+    }
+  }
+  

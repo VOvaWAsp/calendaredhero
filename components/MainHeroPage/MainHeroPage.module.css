@@ -1,59 +1,80 @@
 .container {
-    background-image: url(../../images/video/polishoptimized.gif);
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
-    width: 100%; 
-    height: 100vh;
+  background-image: url(../../images/video/polishoptimized.gif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 75px;
+}
+
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: flex-start;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  background-color: transparent;
+}
+
+.title {
+  font-family: var(--third-family);
+  font-weight: 400;
+  font-size: 128px;
+  color: var(--white);
+  background-color: transparent;
+}
+
+.text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.24em;
+  color: var(--white);
+  width: 600px;
+  background-color: transparent;
+}
+
+.btn {
+  margin-top: 150px;
+  border: 3px solid white;
+  border-radius: 3px;
+  padding: 16px 32px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--white);
+}
+
+.btn:hover,
+.btn:focus {
+  border-radius: 3px;
+  padding: 16px 32px;
+  background: white;
+  color: black;
+}
+
+@media (max-width: 769px) {
+  .container {
     display: flex;
-    align-items: center;
-    padding: 0 75px;
+    align-items: flex-end;
+    padding: 0 10px;
+    height: 600px;
   }
-  
-  .heroSection {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      text-align: flex-start;
-      padding: 20px;
-      border-radius: 10px;
-      color: white; 
-      background-color: transparent;
-  }
-
   .title {
-    font-family: var(--third-family);
-font-weight: 400;
-font-size: 128px;
-color: var(--white);
-background-color: transparent;
+    font-weight: 400;
+    font-size: 40px;
   }
-  
   .text {
-    font-family: var(--font-family);
-font-weight: 500;
-font-size: 20px;
-letter-spacing: 0.24em;
-color: var(--white);
-width: 600px;
-background-color: transparent;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.24em;
   }
-
   .btn {
-    margin-top: 150px;
-    border: 3px solid white;
-border-radius: 3px;
-padding: 16px 32px;
-font-family: var(--font-family);
-font-weight: 500;
-font-size: 20px;
-color: var(--white);
+    margin-top: 40px;
   }
-
-  .btn:hover,
-  .btn:focus {
-    border-radius: 3px;
-padding: 16px 32px;
-background: white;
-color: black;
-  }
+}

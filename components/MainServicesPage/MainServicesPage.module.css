@@ -46,7 +46,7 @@
 }
 
 .blockBtn {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .btn {
@@ -62,6 +62,24 @@
 
 .btn:hover,
 .btn:focus {
-    background: white;
-    color: black;
+  background: white;
+  color: black;
+}
+
+@media (max-width: 769px) {
+  .title {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .blockServices {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .blockCar {
+    padding: 242px 121px;
+  }
+  .blockTruck {
+    padding: 242px 121px;
+  }
 }

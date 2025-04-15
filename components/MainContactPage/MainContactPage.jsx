@@ -24,8 +24,8 @@ export default function MainContactPage() {
             <h3 className={css.text}>Phone</h3>
             <a href="tel:+17735141405" className={css.link}>+1 (773) 514 1405</a>
           </div>
-          <div className={css.cardInfo}>
-            <h3 className={css.text}>Email</h3>
+          <div className={css.cardInfoLast}>
+            <h3 className={css.textLast}>Email</h3>
             <a className={css.link} href="mailto:pidhorskyi.company@gmail.com">
               pidhorskyi.company@gmail.com
             </a>

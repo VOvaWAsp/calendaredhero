@@ -34,14 +34,29 @@ export default function MainReviewsPage() {
     <div className={css.container}>
       <h2 className={css.title}>Reviews</h2>
       <Swiper
-        slidesPerView={2}
         spaceBetween={20}
+        onBeforeInit={(swiper) => {
+          if (swiperButtonPrev.current && swiperButtonNext.current) {
+            swiper.params.navigation.prevEl = swiperButtonPrev.current;
+            swiper.params.navigation.nextEl = swiperButtonNext.current;
+            swiper.navigation.init();
+            swiper.navigation.update();
+          }
+        }}
         navigation={{
           prevEl: swiperButtonPrev.current,
           nextEl: swiperButtonNext.current,
         }}
         modules={[Navigation]}
         className={css.swiper}
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+          },
+          1220: {
+            slidesPerView: 2,
+          },
+        }}
       >
         {reviews.map((item) => {
           return (
